@@ -1,0 +1,101 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="BookStoreShop.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>E-bookstore</title>
+
+    <link href="StyleSheet1.css" media="screen" rel="stylesheet" title="CSS" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <style type="text/css">
+        .auto-style3 {
+        }
+        .auto-style4 {
+            width: 16%;
+            background-color: #FFCCCC;
+        }
+        .auto-style5 {
+            width: 1%;
+        }
+        .auto-style6 {
+            width: 81%;
+            font-size: x-large;
+        }
+        .auto-style7 {
+            width: 166px;
+        }
+        .auto-style8 {
+            width: 10%;
+        }
+        .auto-style10 {
+            width: 311px;
+            height: 187px;
+        }
+    </style>
+
+</head>
+<body style="background-color: #FFFFCC">
+    <form id="form1" runat="server">
+    <div>
+        
+            <table style="width: 100%;">
+                <tr>
+                    <td class="auto-style4">
+                        <img class="auto-style10" src="BookPictures/kniga-(1)-36370-500x334.jpg" /></td>
+                    <td class="auto-style7">&nbsp;</td>
+                    <td class="auto-style8">&nbsp;</td>
+                    <td class="auto-style6">
+                        <marquee direction="up" style="height: 56px; font-size: xx-large; background-color: #FFCCCC;">
+<asp:Label ID="Label1" runat="server" Text="ЕЛЕКТРОННА КНИЖАРНИЦА"
+ meta:resourcekey="Label1Resource2">
+</asp:Label></marquee>
+                    </td>
+                    <td class="auto-style5">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style4">&nbsp;</td>
+                    <td class="auto-style3" colspan="3">
+                        <asp:AdRotator ID="AdRotator1" runat="server" DataSourceID="XmlDataSource1" />
+                        <asp:XmlDataSource ID="XmlDataSource1" runat="server" DataFile="~/AdRotatorSource.xml"></asp:XmlDataSource>
+                        <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" Orientation="Horizontal" OnMenuItemClick="Menu1_MenuItemClick" meta:resourcekey="Menu1Resource1" style="border-style: inset; padding: 1px 4px; text-align: justify; color: #660033;">
+                            <StaticMenuItemStyle BorderColor="#CCCCCC" BorderStyle="Outset" BorderWidth="3px" HorizontalPadding="17px" VerticalPadding="4px" />
+                        </asp:Menu>
+                        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="False" />
+                    </td>
+                    <td class="auto-style5">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style4">&nbsp;</td>
+                    <td class="auto-style3" colspan="3">
+                        <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/BookPictures/MessenTools.com-Flag-of-Bulgaria.png" OnClick="ImageButton1_Click" />
+                        <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="~/BookPictures/uk.png" OnClick="ImageButton2_Click1" style="height: 28px" />
+                    </td>
+                    <td class="auto-style5">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style4">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                    <td class="auto-style3" colspan="3">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                    <td class="auto-style5">&nbsp;</td>
+                </tr>
+            </table>
+
+        <br />
+    </div>
+        <div id="outer-container">  
+    <div id="header">  
+        
+    </div>
+</div>
+    </form>
+
+</body>
+</html>

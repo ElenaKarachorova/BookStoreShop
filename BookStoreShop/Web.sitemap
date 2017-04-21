@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" enableLocalization="true">
+    <siteMapNode url="" title=""  description="">
+        <siteMapNode url="HomePage.aspx" resourceKey="HomePage" title="Начало"  description="" />
+        <siteMapNode url="Menu.aspx" resourceKey="Menu" title="Книги"  description="" />
+        <siteMapNode url="Conection.aspx" resourceKey="Conection" title="За връзка с нас"  description="" />
+        <siteMapNode url="Map.aspx" resourceKey="Map" title="Карта на сайта"  description="" />
+      <siteMapNode url="Contacts.aspx" resourceKey="Contacts" title="За връзки с нас"  description="" />
+      <siteMapNode url="Details.aspx" resourceKey="Details" title="Детайли"  description="" />
+      <siteMapNode url="Books.aspx" resourceKey="Books" title="Книги"  description="" />
+      <siteMapNode url="News.aspx" resourceKey="News" title="Новини"  description="" />
+      <siteMapNode url="Admin.aspx" resourceKey="Admin" title="Администратор"  description="" />
+          </siteMapNode>
+</siteMap>
